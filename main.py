@@ -1,6 +1,10 @@
 import os
 from io import BytesIO
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 import fitz
 from fastapi import FastAPI, File, Header, HTTPException, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
